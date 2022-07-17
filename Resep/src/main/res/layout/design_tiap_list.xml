@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/penampunglist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="#f4f4f4">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/previewResep"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp">
+
+            <TextView
+                android:id="@+id/jResep"
+                android:textColor="#313030"
+                android:text="Resep Soto Sapi Khas Magelang City"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="5dp"
+                android:maxLines="2"
+                android:ellipsize="marquee"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:text="95"
+                    android:maxLines="1"
+                    android:ellipsize="marquee"
+                    android:textSize="14sp"
+                    android:id="@+id/jWaktu"
+                    android:textColor="#313030"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:text="500K"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:ellipsize="marquee"
+                    android:textSize="14sp"
+                    android:id="@+id/jBiaya"
+                    android:textColor="#313030"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/jPorsi"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#EA9834"
+                android:text="10 Porsi" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

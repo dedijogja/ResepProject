@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Resep/Resep.iml" filepath="$PROJECT_DIR$/Resep/Resep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ResepProject.iml" filepath="$PROJECT_DIR$/ResepProject.iml" />
+    </modules>
+  </component>
+</project>

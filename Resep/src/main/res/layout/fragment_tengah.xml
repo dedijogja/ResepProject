@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="405dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:id="@+id/penampunglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#f4f4f4"
+        android:layout_above="@+id/iklanPembukaResep">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/gambarSummary"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/textJudul"
+                    android:textColor="#313030"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="marquee"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Waktu : 45 Menit"
+                        android:maxLines="1"
+                        android:ellipsize="marquee"
+                        android:textSize="12sp"
+                        android:id="@+id/textWaktu"
+                        android:textColor="#313030"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Porsi : 4 Porsi"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:ellipsize="marquee"
+                        android:textSize="12sp"
+                        android:id="@+id/textPorsi"
+                        android:textColor="#313030"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/textBiaya"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#ea9833"
+                    android:layout_marginTop="10dp"
+                    android:text="BIAYA 20K" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/iklanPembukaResep"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal" />
+
+</RelativeLayout>
